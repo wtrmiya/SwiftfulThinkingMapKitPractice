@@ -14,6 +14,7 @@
 		8658F15E2BBA9CE9009F3B9C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658F15D2BBA9CE9009F3B9C /* Location.swift */; };
 		8658F1612BBA9D86009F3B9C /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658F1602BBA9D86009F3B9C /* LocationsDataService.swift */; };
 		8658F1632BBA9DEB009F3B9C /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658F1622BBA9DEB009F3B9C /* LocationsView.swift */; };
+		8658F1652BBAA205009F3B9C /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658F1642BBAA205009F3B9C /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8658F15D2BBA9CE9009F3B9C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		8658F1602BBA9D86009F3B9C /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		8658F1622BBA9DEB009F3B9C /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		8658F1642BBAA205009F3B9C /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		8658F15B2BBA9CAF009F3B9C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8658F1642BBAA205009F3B9C /* LocationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8658F1612BBA9D86009F3B9C /* LocationsDataService.swift in Sources */,
+				8658F1652BBAA205009F3B9C /* LocationsViewModel.swift in Sources */,
 				8658F14D2BBA9B8D009F3B9C /* ContentView.swift in Sources */,
 				8658F1632BBA9DEB009F3B9C /* LocationsView.swift in Sources */,
 				8658F15E2BBA9CE9009F3B9C /* Location.swift in Sources */,
@@ -241,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -298,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
