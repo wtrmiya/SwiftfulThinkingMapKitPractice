@@ -7,6 +7,7 @@
 
 import Foundation
 import MapKit
+import SwiftUI
 
 @MainActor
 final class LocationsViewModel: ObservableObject {
@@ -25,6 +26,8 @@ final class LocationsViewModel: ObservableObject {
         latitudeDelta: 0.1,
         longitudeDelta: 0.1
     )
+    
+    @Published var isShowingLocationList: Bool = false
 
     init() {
         let locations = LocationsDataService.locations
@@ -39,5 +42,18 @@ final class LocationsViewModel: ObservableObject {
             center: location.coordinates,
             span: mapSpan
         )
+    }
+    
+    func toggleLocationList() {
+        withAnimation(.easeInOut) {
+            isShowingLocationList.toggle()
+        }
+    }
+    
+    func showNextLocation(location: Location) {
+        withAnimation(.easeInOut) {
+            mapLocation = location
+            isShowingLocationList = false
+        }
     }
 }
