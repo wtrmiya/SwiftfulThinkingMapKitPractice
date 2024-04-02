@@ -12,7 +12,7 @@ struct SwiftUIMapAppApp: App {
     @StateObject private var viewModel = LocationsViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LocationsView()
                 .environmentObject(viewModel)
         }
     }
